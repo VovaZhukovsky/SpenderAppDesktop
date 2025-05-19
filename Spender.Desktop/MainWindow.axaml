@@ -1,0 +1,24 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="450"
+        x:Class="Spender.Desktop.MainWindow"
+        Title="Spender.Desktop">
+    <Grid x:Name="MainGrid" Background="#f4f4f4">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <StackPanel Name="Expense" Background="#FFF7F3" Margin="10,10,10,5">
+            <TextBlock>Expenses</TextBlock>
+        </StackPanel>
+        <StackPanel Name="Income" Grid.Row="1" Background="#E5D9F2" Margin="10,5,10,5">
+            <TextBlock>Incomes</TextBlock>
+        </StackPanel>
+        <StackPanel Name="Balance" Grid.Row="2" Background="#E9A5F1" Margin="10,5,10,5">
+            <TextBlock>Balance</TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>
